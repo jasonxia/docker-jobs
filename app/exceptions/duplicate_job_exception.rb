@@ -1,0 +1,2 @@
+class DuplicateJobException < RuntimeError
+end

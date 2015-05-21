@@ -1,0 +1,2 @@
+class JobNotFoundException < RuntimeError
+end
