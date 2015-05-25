@@ -53,5 +53,9 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  resources :jobs
+
+  root 'jobs#index'
+
+  resources :jobs, only: [:index, :create]
+  delete 'jobs' => 'jobs#destroy'
 end
